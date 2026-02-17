@@ -1,7 +1,7 @@
 /* Apply to the whole page */
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(112, 112, 112);
+  background-color: #492c50;
   margin: 0;
   padding: 0;
 }
@@ -82,3 +82,195 @@ tr:nth-child(odd) {
 tr:hover {
   background-color: #e6f2ff;
 }
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling makes the jump between sections look professional */
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2d1c31; /* Dark professional blue */
+    color: white;
+    position: sticky; /* Keeps the header at the top while scrolling */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+.nav-button {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for better UX */
+.nav-button:hover {
+    background-color: #34495e;
+    border-color: #ecf0f1;
+}
+
+/* Adding space to sections so they don't hide under the sticky header */
+section {
+    padding: 20px 20px;
+    /* min-height: 100vh; */
+}
+
+
+
+
+
+
+
+
+/* The Main Outer Container */
+.deliverables-container {
+    background-color: #8f6d95; /* Lightest violet */
+    padding: 30px;
+    border-radius: 15px; /* Curved edges */
+    max-width: 75%; /* 900px */
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.section-title {
+    color: #1f093a; /* Deep violet */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Individual Rows for Deliverable Section */
+.deliverable-row {
+    background-color: #c1abc5; /* Medium violet */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 12px; /* Spacing between rows */
+    border-radius: 10px; /* Curved edges */
+    /* transition: transform 0.2s ease; */
+}
+
+/* .deliverable-row:hover {
+    transform: translateX(5px);
+} */
+
+/* Text Styling */
+.deliverable-main-title {
+    color: #4a148c;
+    font-size: 1.2rem;
+}
+
+.deliverable-subtitle {
+    color: #6a1b9a;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #7b1fa2; /* Rich violet */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #4a148c;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+
+
+
+
+.team-container {
+    background-color: #8f6d95; /* Lightest violet */
+    padding: 30px;
+    border-radius: 15px; /* Curved edges */
+    max-width: 75%; /* 900px */
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+/* Individual Rows for Team Section*/
+.team-row {
+    background-color: #c1abc5; /* Medium violet */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 12px; /* Spacing between rows */
+    border-radius: 10px; /* Curved edges */
+    /* transition: transform 0.2s ease; */
+}
+
+.team-text {
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+
+
+
+
+
+/* 
+--text: #0e0c0f;
+--background: #fcfbfc;
+--primary: #8f6d95;
+--secondary: #c1abc5;
+--accent: #ac89b2; */
+
+
+/* 
+tailwindCSS:
+
+colors: {
+ 'text': '#0e0c0f',
+ 'background': '#fcfbfc',
+ 'primary': '#8f6d95',
+ 'secondary': '#c1abc5',
+ 'accent': '#ac89b2',
+},
+ */
