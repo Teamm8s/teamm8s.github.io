@@ -1,7 +1,7 @@
 /* Apply to the whole page */
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(112, 112, 112);
+  background-color: #492c50;
   margin: 0;
   padding: 0;
 }
@@ -81,4 +81,163 @@ tr:nth-child(odd) {
 /* Hover effect */
 tr:hover {
   background-color: #e6f2ff;
+}
+
+
+
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Homebar Style */
+.homebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2d1c31;
+    color: white;
+    position: sticky; /* Keeps the header at the top while scrolling */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navigation-gap {
+    display: flex;
+    gap: 15px;
+}
+
+.navigation-button {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navigation-button:hover {
+    background-color: #34495e;
+    border-color: #ecf0f1;
+}
+
+section {
+    padding: 20px 20px; /* Adds spacing between sections. */
+}
+
+
+
+
+
+/* The Main Container */
+.deliverables-container {
+    background-color: #8f6d95;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 75%;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.section-title {
+    color: #1f093a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Individual Rows for Deliverable Section */
+.deliverable-row {
+    background-color: #c1abc5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 12px; /* Adds spacing between rows. */
+    border-radius: 10px;
+}
+
+/* Text Styling */
+.deliverable-main-title {
+    color: #4a148c;
+    font-size: 1.2rem;
+}
+
+.deliverable-subtitle {
+    color: #6a1b9a;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+.deliv-button-gap {
+    display: flex;
+    gap: 10px;
+}
+
+.deliv-button {
+    text-decoration: none;
+    background-color: #7b1fa2;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+.deliv-button:hover {
+    background-color: #4a148c;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+.team-container {
+    background-color: #8f6d95; /* Lightest violet */
+    padding: 30px;
+    border-radius: 15px; /* Curved edges */
+    max-width: 75%; /* 900px */
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Individual Rows for Team Section*/
+.team-row {
+    background-color: #c1abc5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 12px; /* Adds spacing between rows. */
+    border-radius: 10px;
+}
+
+.team-text {
+  font-size: 1.0rem;
+  font-weight: bold;
 }
