@@ -84,6 +84,9 @@ tr:hover {
 }
 
 
+
+
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -91,17 +94,18 @@ tr:hover {
     box-sizing: border-box;
 }
 
-/* Smooth scrolling makes the jump between sections look professional */
+/* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
 }
 
-.navbar {
+/* Homebar Style */
+.homebar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #2d1c31; /* Dark professional blue */
+    background-color: #2d1c31;
     color: white;
     position: sticky; /* Keeps the header at the top while scrolling */
     top: 0;
@@ -113,12 +117,12 @@ html {
     font-weight: bold;
 }
 
-.nav-links {
+.navigation-gap {
     display: flex;
-    gap: 15px; /* Space between buttons */
+    gap: 15px;
 }
 
-.nav-button {
+.navigation-button {
     text-decoration: none;
     color: white;
     padding: 8px 16px;
@@ -127,56 +131,45 @@ html {
     transition: all 0.3s ease;
 }
 
-/* Hover effect for better UX */
-.nav-button:hover {
+.navigation-button:hover {
     background-color: #34495e;
     border-color: #ecf0f1;
 }
 
-/* Adding space to sections so they don't hide under the sticky header */
 section {
-    padding: 20px 20px;
-    /* min-height: 100vh; */
+    padding: 20px 20px; /* Adds spacing between sections. */
 }
 
 
 
 
 
-
-
-
-/* The Main Outer Container */
+/* The Main Container */
 .deliverables-container {
-    background-color: #8f6d95; /* Lightest violet */
+    background-color: #8f6d95;
     padding: 30px;
-    border-radius: 15px; /* Curved edges */
-    max-width: 75%; /* 900px */
+    border-radius: 15px;
+    max-width: 75%;
     margin: 20px auto;
     font-family: sans-serif;
 }
 
 .section-title {
-    color: #1f093a; /* Deep violet */
+    color: #1f093a;
     margin-bottom: 20px;
     text-align: center;
 }
 
 /* Individual Rows for Deliverable Section */
 .deliverable-row {
-    background-color: #c1abc5; /* Medium violet */
+    background-color: #c1abc5;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    margin-bottom: 12px; /* Spacing between rows */
-    border-radius: 10px; /* Curved edges */
-    /* transition: transform 0.2s ease; */
+    margin-bottom: 12px; /* Adds spacing between rows. */
+    border-radius: 10px;
 }
-
-/* .deliverable-row:hover {
-    transform: translateX(5px);
-} */
 
 /* Text Styling */
 .deliverable-main-title {
@@ -190,15 +183,14 @@ section {
     margin-top: 4px;
 }
 
-/* Button Group Styling */
-.button-group {
+.deliv-button-gap {
     display: flex;
     gap: 10px;
 }
 
-.btn {
+.deliv-button {
     text-decoration: none;
-    background-color: #7b1fa2; /* Rich violet */
+    background-color: #7b1fa2;
     color: white;
     padding: 8px 16px;
     border-radius: 6px;
@@ -208,11 +200,12 @@ section {
 }
 
 /* Button Hover Effect */
-.btn:hover {
+.deliv-button:hover {
     background-color: #4a148c;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transform: translateY(-2px);
 }
+
 
 
 
@@ -233,44 +226,18 @@ section {
     gap: 15px;
 }
 
-
 /* Individual Rows for Team Section*/
 .team-row {
-    background-color: #c1abc5; /* Medium violet */
+    background-color: #c1abc5;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    margin-bottom: 12px; /* Spacing between rows */
-    border-radius: 10px; /* Curved edges */
-    /* transition: transform 0.2s ease; */
+    margin-bottom: 12px; /* Adds spacing between rows. */
+    border-radius: 10px;
 }
 
 .team-text {
   font-size: 1.0rem;
   font-weight: bold;
 }
-
-
-
-
-
-/* 
---text: #0e0c0f;
---background: #fcfbfc;
---primary: #8f6d95;
---secondary: #c1abc5;
---accent: #ac89b2; */
-
-
-/* 
-tailwindCSS:
-
-colors: {
- 'text': '#0e0c0f',
- 'background': '#fcfbfc',
- 'primary': '#8f6d95',
- 'secondary': '#c1abc5',
- 'accent': '#ac89b2',
-},
- */
